@@ -22,15 +22,40 @@ contact: admin@software-carpentry.org
 
 <hr/>
 
-<h2>Setup</h2>
+<h2>Typical Setup</h2>
+
+  {% include setup/vm.html %}
+
+<h2>Advanced Setup</h2>
+<p>
+    For advanced users who would like to install the individual required
+    software packages directly on their laptops (rather than downloading the
+    virtual machine), we provide links below for Windows, Mac OS X, and Linux.
+</p>
 
 <div class="row-fluid">
   <div class="span6">
     {% include setup/overview-bash.html %}
+    {% include setup/windows-bash.html %}
+    {% include setup/macosx-bash.html %}
+    {% include setup/linux-bash.html %}
+    <hr />
     {% include setup/overview-editor.html %}
+    {% include setup/windows-editor.html %}
+    {% include setup/macosx-editor.html %}
+    {% include setup/linux-editor.html %}
   </div>
   <div class="span6">
     {% include setup/overview-git.html %}
-    {% include setup/overview-python.html %}
+    {% include setup/windows-git.html %}
+    {% include setup/macosx-git.html %}
+    {% include setup/linux-git.html %}
   </div>
 </div>
+
+<hr />
+
+{% include setup/overview-python.html %}
+{% include setup/windows-python.html %}
+{% include setup/macosx-python.html %}
+{% include setup/linux-python.html %}
